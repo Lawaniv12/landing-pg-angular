@@ -30,10 +30,10 @@ html {
   left: 6px;
 }
 
-
 .banner .owl-next {
   right: -60px;
 }
+
 .banner .owl-next i, .banner .owl-prev i{
   font-size: 30px;
   position: absolute;
