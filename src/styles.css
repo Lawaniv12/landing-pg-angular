@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  padding: 0;
+  margin: 0;
+  background: #eee;
+}
+
+html {
+  font-size: 16px;
+}
+
+.banner{
+  position: relative;
+}
+
+.banner .owl-next, .banner .owl-prev{
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: transparent !important;
+  transition: .3s all ease;
+}
+.banner .owl-next:hover::before, .banner .owl-prev:hover::before{
+  background: #ff4000;
+}
+.banner .owl-prev{
+  left: 6px;
+}
+
+
+.banner .owl-next {
+  right: -60px;
+}
+.banner .owl-next i, .banner .owl-prev i{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .owl-next i{
+  right: 10%;
+}
+
+.banner .owl-prev::before, .banner .owl-next::before {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  background: #ffffff24 ;
+  content: '';
+  border-radius: 50%;
+}
+
+.banner .owl-next::before {
+  right: -106px;
+}
+
+.banner .owl-prev::before{
+  left: 44px;
+}
+
+.testimonial .owl-prev, .testimonial .owl-next{
+  position: absolute !important;
+  background: #ffffff24 !important;
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 50% !important;
+  z-index: 2 !important;
+  font-size: 24px !important;
+  color: #111 !important;
+  transition: all .4s ease !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%)!important;
+}
+
+.testimonial .owl-prev:hover, .testimonial .owl-next:hover{
+  background-color: #ff4000 !important;
+  color: #fff !important;
+
+}
+.testimonial .owl-prev{
+  left: 114px !important;
+}
+
+.testimonial .owl-next{
+  right: 48px !important;
+}
+
+.testimonial .owl-prev i, .testimonial .owl-next i{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%)!important;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 14px;}
+  body{
+    overflow: none;
+  }
+}
+
+@media (max-width: 400px) {
+  html { font-size: 12px; }
+}
+
+@media only screen and (max-width: 600px) {
+  html {font-size: 14px;}
+}
+
+@media (max-width: 400px) {
+  html { font-size: 12px; }
+}
